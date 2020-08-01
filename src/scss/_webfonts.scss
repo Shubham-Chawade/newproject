@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../webfonts/m-bold/montserrat-bold-webfont.eot');
+    src: url('../webfonts/m-bold/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/m-bold/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../webfonts/m-bold/montserrat-bold-webfont.woff') format('woff'),
+         url('../webfonts/m-bold/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../webfonts/m-bold/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../webfonts/m-light/montserrat-light-webfont.eot');
+    src: url('../webfonts/m-light/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/m-light/montserrat-light-webfont.woff2') format('woff2'),
+         url('../webfonts/m-light/montserrat-light-webfont.woff') format('woff'),
+         url('../webfonts/m-light/montserrat-light-webfont.ttf') format('truetype'),
+         url('../webfonts/m-light/montserrat-light-demo.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../webfonts/m-regular/montserrat-regular-webfont.eot');
+    src: url('../webfonts/m-regular/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/m-regular/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../webfonts/m-regular/montserrat-regular-webfont.woff') format('woff'),
+         url('../webfonts/m-regular/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../webfonts/m-regular/montserrat-regular-demo.svg#montserrat') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Material icon font integration
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
+
+
+
+
+

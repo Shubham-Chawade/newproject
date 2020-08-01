@@ -1,0 +1,386 @@
+body {
+    font-family: 'montserrat';
+}
+
+
+//padding
+.pt-6 {
+    padding-top:70px;
+}
+
+
+body, html {
+    height: 100%;
+    margin:0;
+}
+
+.md-18 {
+    font-size:18px !important;
+}
+
+.md-26 {
+    font-size:26px !important;
+}
+
+
+
+#main {
+    height:150vh;
+}
+
+#main {
+    background-image:url('../img/zachary-nelson-192289-unsplash.png');
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 40px 0; 
+     /* Full height */
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+
+    &::before {
+        content:'';
+        position:absolute;
+        height:100%;
+        background-color:rgba(70, 33, 173,.83);
+        left:0; right:0; bottom:0; top:0;
+        z-index:0;
+    }
+    
+    
+    .info-box {
+        .inner-info {
+            p {
+            font-size:14px; 
+            opacity: .83;
+        }
+        }
+        h3 {
+            @include monte-bold;
+            font-size: 40px;
+        }
+        position:relative;
+         top:30%; left:50%;
+        @include translate(-50%, 0);
+        color:$white-c;
+        
+        
+        
+        .tile {
+            img {
+                width:73px; height:73px;
+                margin:20px 0;
+            }
+            p {
+                font-size:15px;
+                color:$white-c;
+                margin-bottom:5px;
+            }
+            span {
+                opacity:.83;
+                font-size:14px;
+            }
+            text-align:center;
+        }
+    }
+    
+}
+
+
+#info {
+    height:100vh;
+    padding:80px 0;
+    .head-area {
+        h2 {
+            font-family: 'montserratbold';
+        }
+        p {
+            font-size:13px;
+            color:$grey;
+            font-weight:500;
+        }
+    }
+    
+    .main-info {
+        .card {
+           
+            @include shadow;
+            margin:0 10px;
+            border-radius:10px;
+            
+            .card-body {
+                position:relative;
+                .absolute-img {
+                position:absolute;
+                top:15px;
+                right:15px;
+                    height:30px;
+                    weight:30px;
+                }
+            }
+        }
+        .card, .card-body, .card-footer {
+            border:0;
+            .card-footer {
+                background-color:$white-c;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                
+                h5 {
+                    font-family: 'montserratbold';
+                    text-transform: uppercase;
+                    margin:0;
+                    font-size:14px;
+                }
+                span {
+                    color:$dark-grey;
+                    font-size:8px;
+                }
+                .fa {
+                    font-size:28px;
+                    color:$grey;
+                }
+                
+                &.with-info {
+                    
+                    p {
+                        font-size:10px;
+                        color:$dark-grey;
+                        line-height:1.4;
+                    }
+                }
+            }
+        }
+    }
+    
+    .card.advanced {
+        .card-body {
+            
+            .profile-info {
+                h4{
+                font-family: 'montserratbold';
+            }
+                p {
+                    color:$dark-grey;
+                    font-size:14px;
+                    font-weight: 600;
+                }
+                
+    button {
+        font-size:12px;
+        font-weight:600;
+        
+        .fa {
+           padding-left:15px;
+            padding-right:15px;
+        }
+        
+        &.btn-outline-secondary {
+            border-color:$grey !important;
+            
+            .fa {
+                color:$dark;
+            }
+            
+            &:hover {
+                .fa {
+                    color:$white-c;
+                }
+            }
+        }
+    }
+            }
+            
+.profile-list {
+    > ul {
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:$slate;
+            font-size:13px;
+            font-weight:600;
+            padding:.35rem 1.25rem;
+            
+            .fa-play-circle-o,.fa-pause-circle {
+                
+                font-size:22px;
+                padding-right:10px;
+            }
+            
+            .fa-play-circle-o {
+                color:$slate;
+            }
+            
+            .fa-download {
+                padding-right:10px;
+                color:$dark;
+            }
+            
+            >div {
+                 display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+}
+            
+        }  
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .pt-6 {
+        padding-top: 30px;
+    }
+    #main {
+        height:auto;
+            background-size:600%;
+        .info-box {
+            top:10%;
+            .inner-info {
+                margin-top:50px;
+                width: 50%;
+                text-align: initial;
+                margin-left: auto;
+                margin-right: auto;
+            h3 {
+                font-size:30px;
+                padding:30px 0;
+            }
+                
+                
+        }
+            .tile {
+                padding:30px 0;
+                img {
+                    margin:12px 0;
+                    width:60px;
+                    height:60px;
+                }
+            }
+            
+            .inner-info {
+                p{
+                    font-size:12px;
+                }
+            }
+            
+        }
+        
+        }
+}
+
+
+.w-auto {
+    width:90px;
+}
+
+.btn-strip {
+    .btn {
+        font-size:10px;
+    }
+}
+
+.btn-rounded {
+    border-radius:45px;
+}
+
+.btn-primary {
+   background-color:$violet;
+    border-color:$violet;
+    &:hover, &:focus, &:active {
+        background-color:$violet !important;
+        color:$white-c;
+    }
+}
+
+.btn-outline-primary {
+border-color:$violet; 
+    color:$violet;
+ &:active {
+    background-color:$violet;
+}
+    &:hover, &:focus {
+        border-color:$violet; 
+    color:$violet !important;
+        background-color:$white-c;
+    }
+}
+
+
+//scrollbar
+
+/* total width */
+.scrollbar::-webkit-scrollbar {
+    background-color:#fff;
+    width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+.scrollbar::-webkit-scrollbar-track {
+    background-color:#fff
+}
+.scrollbar::-webkit-scrollbar-track:hover {
+    background-color:#f4f4f4
+}
+
+/* scrollbar itself */
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    border-radius:16px;
+    border:5px solid #fff
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color:#a0a0a5;
+    border:4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+.scrollbar::-webkit-scrollbar-button {display:none}
+
+/* div box */
+.scrollbar {
+    height: 42vh;
+    width: 100%;
+    min-width: 150px;
+    background: #fff;
+    overflow-y: scroll}
+.overflow{min-height: 100vh}
+
+
+
+@media (max-width:375px) {
+    #main {
+        height:auto !important;
+        background-size:700%;
+        .tile img {
+            width:45px !important; height:45px !important;
+            margin:12px 6px 0 !important;
+        }
+    }
+    
+    
+}
+
+@media (max-width:320px){
+    .btn-strip .btn {
+        font-size:8px;
+    }
+}
+
+@media (min-width:768px) {
+    .info-box {
+        .inner-info {
+            width:500px;
+            margin:auto;
+        }
+    }
+}

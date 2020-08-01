@@ -1,0 +1,87 @@
+body, html {
+  height: 100%;
+  margin: 0; }
+
+#main, #info {
+  height: 100vh; }
+
+#main {
+  background-image: url("../img/zachary-nelson-192289-unsplash.png");
+  background-position: center;
+  background-size: cover;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat; }
+  #main::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: rgba(70, 33, 173, 0.83);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0; }
+  #main .info-box {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    color: #fff; }
+    #main .info-box .inner-box p {
+      font-size: 14px;
+      opacity: .63; }
+    #main .info-box h3 {
+      font-family: 'montserratbold', sans-serif;
+      font-size: 40px; }
+    #main .info-box .tile {
+      text-align: center; }
+      #main .info-box .tile img {
+        width: 73px;
+        height: 73px;
+        margin: 20px 0; }
+      #main .info-box .tile p {
+        font-size: 15px;
+        color: #fff;
+        margin-bottom: 5px; }
+      #main .info-box .tile span {
+        opacity: .83;
+        font-size: 14px; }
+
+@media (min-width: 768px) {
+  .info-box .inner-info {
+    width: 500px;
+    margin: auto; } }
+@media (max-width: 767px) {
+  #main {
+    height: 100%;
+    background-size: 400%; }
+    #main .info-box {
+      top: 10%; }
+      #main .info-box .inner-info h3 {
+        font-size: 30px; }
+      #main .info-box .tile img {
+        margin: 12px 0;
+        width: 60px;
+        height: 60px; }
+      #main .info-box .inner-info p {
+        font-size: 12px; } }
+@media (max-width: 375px) {
+  #main {
+    height: auto !important; }
+    #main .tile img {
+      width: 45px !important;
+      height: 45px !important;
+      margin: 12px 6px 0 !important; } }
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../webfonts/montserrat-bold-webfont.eot");
+  src: url("../webfonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../webfonts/montserrat-bold-webfont.woff2") format("woff2"), url("../webfonts/montserrat-bold-webfont.woff") format("woff"), url("../webfonts/montserrat-bold-webfont.ttf") format("truetype"), url("../webfonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=main.css.map */

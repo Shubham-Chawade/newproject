@@ -1,0 +1,26 @@
+@mixin rounded-btn {
+    border-radius:50px;
+}
+
+@mixin rounded-lg-btn {
+    padding: 5px 70px;
+}
+
+.rounded-btn {
+    @include rounded-btn;
+    @include rounded-lg-btn;
+}
+
+.btn-white {
+    background-color:$white-c;
+}
+
+@media (max-width:767px) {
+    #main {
+        .rounded-btn {
+            width:80%;
+            margin-bottom:45px;
+        }
+    }
+    
+}
